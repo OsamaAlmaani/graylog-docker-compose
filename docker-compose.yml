@@ -24,7 +24,7 @@ services:
     restart: "on-failure"
 
   graylog:
-    image: "${GRAYLOG_IMAGE:-graylog/graylog:5}"
+    image: "${GRAYLOG_IMAGE:-graylog/graylog:5.0}"
     depends_on:
       elasticsearch:
         condition: "service_started"
